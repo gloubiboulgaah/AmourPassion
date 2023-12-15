@@ -1,3 +1,14 @@
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  :root {
+    --card-height: 65vh;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+
 body {
     background: rgb(248,151,255);
     background: radial-gradient(circle, rgba(248,151,255,1) 51%, rgba(255,0,191,1) 96%);
@@ -17,13 +28,18 @@ body {
 .title-container {
     padding-top: 10px;
     padding-bottom: 10px;
-    border: solid 10px rgb(95, 16, 101);
+    border: double 10px rgb(95, 16, 101);
+    background: rgb(224,196,81);
+    background: radial-gradient(circle, rgba(224,196,81,1) 51%, rgba(193,160,28,1) 70%, rgba(107,104,95,1) 100%);
     border-radius: 100%;
     font-size: 30px;
     text-align: center;
     font-family: 'PinyonScript';
     color: rgb(95, 16, 101);
     transition: color 0.3s ease; /* Transition pour l'effet de survol */
+    box-shadow: 0px 12px 22px 4px rgba(0,0,0,0.63);
+    -webkit-box-shadow: 0px 12px 22px 4px rgba(0,0,0,0.63);
+    -moz-box-shadow: 0px 12px 22px 4px rgba(0,0,0,0.63);
 }
 
 .player-container {
@@ -39,20 +55,28 @@ body {
 }
 /* CENTER */
 
-.center {
-    border: solid 10px rgb(95, 16, 101);
-    margin-top: 10px;
+.box {
+    border: double 10px rgb(95 16 101);
+    margin-top: 20px;
     width: 95%;
+    display: flex;
+    background: rgb(255,244,200);
+    background: radial-gradient(circle, rgba(255,244,200,1) 0%, rgba(255,226,106,1) 41%, rgba(224,196,81,1) 71%, rgba(175,175,175,1) 98%);
+    box-shadow: 0px 12px 22px 4px rgba(0,0,0,0.63);
+    -webkit-box-shadow: 0px 12px 22px 4px rgba(0,0,0,0.63);
+    -moz-box-shadow: 0px 12px 22px 4px rgba(0,0,0,0.63);
+}
+
+.row-container {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-.simple-container {
-    border: solid 10px rgb(95, 16, 101);
-    margin-top: 10px;
-    width: 95%;
+.column-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,7 +138,12 @@ body {
 }
 
 .poeme {
+    margin: 20px;
     padding: 20px;
+    background-color: white;
+    box-shadow: 0px 12px 22px 4px rgba(0,0,0,0.63);
+    -webkit-box-shadow: 0px 12px 22px 4px rgba(0,0,0,0.63);
+    -moz-box-shadow: 0px 12px 22px 4px rgba(0,0,0,0.63);
 }
 
 .poeme2 {
@@ -122,24 +151,38 @@ body {
 }
 .poeme2 img {
     width: 100%;
+    box-shadow: 0px 12px 22px 4px rgba(0,0,0,0.63);
+    -webkit-box-shadow: 0px 12px 22px 4px rgba(0,0,0,0.63);
+    -moz-box-shadow: 0px 12px 22px 4px rgba(0,0,0,0.63);
 }
 h1 {
     font-family: 'PinyonScript';
+    text-shadow: -4px 2px 6px rgba(0,0,0,0.55);
+
 }
 
 .img-card {
     margin: 20px;
     width: 20%;
     border: solid 2px rgb(95, 16, 101);
-    background-color: rgb(95, 16, 101);
-    border-radius: 5%;
-    color: rgb(248,151,255);
+    background: rgb(248,151,255);
+    background: radial-gradient(circle, rgba(248,151,255,1) 51%, rgba(255,0,191,1) 96%);
+    border-radius: 3%;
+    color: rgb(95, 16, 101);
     text-align: center;
     font-family: 'Charmonman';
+    transition: transform 0.3s;
+    overflow: hidden;
+    box-shadow: 0px 12px 22px 4px rgba(0,0,0,0.63);
+    -webkit-box-shadow: 0px 12px 22px 4px rgba(0,0,0,0.63);
+    -moz-box-shadow: 0px 12px 22px 4px rgba(0,0,0,0.63);
+}
+
+.img-card:hover {
+    transform: scale(1.5);
 }
 
 .img-card img {
-    border-radius: 5%;
     width: 100%;
 }
 
@@ -147,6 +190,10 @@ h1 {
     .img-card {
         margin: 10px;
         font-size: 1.5vw;
+    }
+    #poesie {
+        display: flex;
+        flex-direction: column;
     }
 }
 
