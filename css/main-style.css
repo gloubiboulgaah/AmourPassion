@@ -74,7 +74,7 @@ body {
 .introduction-container {
     text-align: center;
     font-family: 'Charmonman';
-    font-size: 2vw;
+    font-size: large;
     background-color: red;
     border: solid 5px rgb(95, 16, 101);
     border-radius: 2%;
@@ -143,7 +143,19 @@ h1 {
     width: 100%;
 }
 
+@media (max-width: 768px) {
+    .img-card {
+        margin: 10px;
+        font-size: 1.5vw;
+    }
+}
+
 @font-face {
     font-family: 'PinyonScript';
     src: url('../fonts/pinyon-script/PinyonScript-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Charmonman';
+    src: url('../fonts/Charmonman/Charmonman-Regular.ttf');
 }
