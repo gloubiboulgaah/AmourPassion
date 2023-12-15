@@ -1,12 +1,47 @@
 html{
-    background-image: url('https://media.discordapp.net/attachments/1184982072310366300/1184986170271203458/1000_F_578732400_vDHvrlI3i5CE9XO2MLzWk9RM5bQCPco2.png?ex=658df75e&is=657b825e&hm=397d1be64fea028228b3ee2c88f0eb8564b7f1612ceff1df144b4b68b63fd36a&=&format=webp&quality=lossless&width=1674&height=1116');
-    background-size: 100% 100%;
+    background-image: url('../images/Sans\ titre-1.png');
+    background-size: 100%;
+    background-position: center;
     background-repeat: no-repeat;
 
 }
+
 body {
     height: 100%;
     margin: 0;
+}
+
+.btn {
+    background-color: #fcbbcb;
+    font-family: 'PinyonScript';
+    color:black;
+    font-size: 25px;
+    padding: 30px;
+    width: 200px;
+    transition: 0.3s;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 0 rgba(195, 78, 114, 0.8), -5px -5px 15px 0 rgba(252, 187, 203, 0.8);
+}
+
+.btn:active{
+    box-shadow: inset 5px 5px 15px 0 rgba(195, 78, 114, 0.8), inset -5px -5px 15px 0 rgba(252, 187, 203, 0.8)!important;
+}
+.btn:hover{
+    box-shadow: 5px 5px 15px 0 rgba(198, 21, 61, 0.8), -5px -5px 15px 0 rgba(252 187, 203, 0.8);
+}
+
+.btn:active p {
+    transform: scale(0.95);
+}
+
+p {
+    transition: 0.3s;
+}
+
+
+
+a {    
+    text-decoration: none;
 }
 
 .center-container {
@@ -18,9 +53,14 @@ body {
 }
 
 .txt-container {
+    box-shadow: 0px 0px 20px 2px rgba(158,66,85,0.71) inset;
+    -webkit-box-shadow: 0px 0px 20px 2px rgba(158,66,85,0.71) inset;
+    -moz-box-shadow: 0px 0px 20px 2px rgba(158,66,85,0.71) inset;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-    background: rgb(193, 193, 193);
-    background: radial-gradient(circle, rgba(193,193,193,0.7329525560224089) 0%, rgba(115,0,86,1) 100%);
+    background-color: #fcbbcb;
     border: solid 5px black;
     padding: 2%;
 }
@@ -30,14 +70,28 @@ body {
     color: rgb(46, 0, 33);
     transition: color 0.3s ease; /* Transition pour l'effet de survol */
 }
-.txt-container p {
-    font-size: large;
-}
+
 .txt-container h1:hover {
-    color: red;
+    color: #c34e72;
 }
 
 @font-face {
     font-family: 'PinyonScript';
     src: url('../fonts/pinyon-script/PinyonScript-Regular.ttf');
+}
+
+@media (max-width: 768px) {
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    html{
+        background-size: auto 100%;
+    }
+
+    .center-container {
+        width: 80%;
+    }
 }
