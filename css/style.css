@@ -1,0 +1,43 @@
+html{
+    background-image: url('https://media.discordapp.net/attachments/1184982072310366300/1184986170271203458/1000_F_578732400_vDHvrlI3i5CE9XO2MLzWk9RM5bQCPco2.png?ex=658df75e&is=657b825e&hm=397d1be64fea028228b3ee2c88f0eb8564b7f1612ceff1df144b4b68b63fd36a&=&format=webp&quality=lossless&width=1674&height=1116');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.txt-container {
+    text-align: center;
+    background: rgb(193, 193, 193);
+    background: radial-gradient(circle, rgba(193,193,193,0.7329525560224089) 0%, rgba(115,0,86,1) 100%);
+    border: solid 5px black;
+    padding: 2%;
+}
+
+.txt-container h1 {
+    font-family: 'PinyonScript';
+    color: rgb(46, 0, 33);
+    transition: color 0.3s ease; /* Transition pour l'effet de survol */
+}
+.txt-container p {
+    font-size: large;
+}
+.txt-container h1:hover {
+    color: red;
+}
+
+@font-face {
+    font-family: 'PinyonScript';
+    src: url('../fonts/pinyon-script/PinyonScript-Regular.ttf');
+}
