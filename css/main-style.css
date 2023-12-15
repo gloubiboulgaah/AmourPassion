@@ -10,8 +10,8 @@
   }
 
 body {
-    background: rgb(248,151,255);
-    background: radial-gradient(circle, rgba(248,151,255,1) 51%, rgba(255,0,191,1) 96%);
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(249,172,255,1) 22%, rgba(248,157,255,1) 52%, rgba(79,0,59,1) 96%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,9 +60,9 @@ body {
     margin-top: 20px;
     width: 95%;
     display: flex;
-    background: rgb(255,244,200);
-    background: radial-gradient(circle, rgba(255,244,200,1) 0%, rgba(255,226,106,1) 41%, rgba(224,196,81,1) 71%, rgba(175,175,175,1) 98%);
-    box-shadow: 0px 12px 22px 4px rgba(0,0,0,0.63);
+    background: rgb(255,214,251);
+background: radial-gradient(circle, rgba(255,214,251,1) 34%, rgba(255,152,245,1) 73%, rgba(214,90,145,1) 95%, rgba(203,73,118,1) 100%);
+       box-shadow: 0px 12px 22px 4px rgba(0,0,0,0.63);
     -webkit-box-shadow: 0px 12px 22px 4px rgba(0,0,0,0.63);
     -moz-box-shadow: 0px 12px 22px 4px rgba(0,0,0,0.63);
 }
@@ -147,7 +147,8 @@ body {
 }
 
 .poeme2 {
-    padding:20px
+    padding:20px;
+    text-align: center;
 }
 .poeme2 img {
     width: 100%;
@@ -155,6 +156,7 @@ body {
     -webkit-box-shadow: 0px 12px 22px 4px rgba(0,0,0,0.63);
     -moz-box-shadow: 0px 12px 22px 4px rgba(0,0,0,0.63);
 }
+
 h1 {
     font-family: 'PinyonScript';
     text-shadow: -4px 2px 6px rgba(0,0,0,0.55);
