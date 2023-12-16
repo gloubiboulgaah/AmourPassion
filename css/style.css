@@ -3,6 +3,7 @@ html{
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: url('../images/arrow.cur'),auto;
 
 }
 
@@ -42,6 +43,8 @@ p {
 
 a {    
     text-decoration: none;
+    cursor: url('../images/Precision.cur'),pointer;
+
 }
 
 .center-container {
