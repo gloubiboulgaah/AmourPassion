@@ -34,11 +34,11 @@ class Question {
 
 let questions = [
   new Question("Quel est l'espèce de chien préferée d'Anouck ?",["le berger allemand","le teckel","le labrador","le pitbull"],"le teckel"),
-  new Question("Quel est le nom du chien d'Anouck",["Oscour ?","Osirus","Ozzy","Omar Ben-Salaah'Aid"],"ozzy"),
+  new Question("Quel est le nom du chien d'Anouck",["Oscour ?","Osirus","Ozzy","Omar Ben-Salaah'Aid"],"Ozzy"),
   new Question("Quelle est la chose que Anouck préfère faire ?",["se droguer","manger","mettre en place son régime autoritaire","dormir"],"dormir"),
   new Question("Quelle est le groupe de musique préféré d'Anouck ?",["Arctic Monkeys","Grout/Grout","So la Lune","jul"],"Arctic Monkeys"),
   new Question("Quel est le nom du futur enfant d'Anouck (avec moi) ?",["Oscar","Rachid","Ozzy","Léon"],"Léon"),
-  new Question("Qui est l'amoureux d'Anouck ?",["Elliott RAMETGROUT","Eliott Tivollier","Elliott Smith","Elliott Roger"], "Elliott RAMETGROUT"),
+  new Question("Qui est l'amoureux d'Anouck ?",["Elliott RAMETGROUT","Eliott Tivollier","Elliott Smith","Elliott Roger"],"Elliott RAMETGROUT"),
   new Question("De quoi Anouck a le plus peur ?",["des araignées","des clowns","des noirs","du noir"],"du noir"),
   new Question("Combien Anouck a de frères et soeurs ?",["1","2","3","4"],"3"),
   new Question("Quel instrument Anouck sait joue ?",["la guitare","la batterie","le saxo","le violon"],"le saxo"),
