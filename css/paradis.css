@@ -114,8 +114,8 @@ body, body * {
 .container :nth-child(16) {
   transform: translateZ(0.3px) scale(0.7);
   z-index: 300;
-  top: 200px;
-  left: 2000px;
+  top: 429px;
+  left: 1739px;
 }
 .container :nth-child(17) {
   transform: translateZ(0.6px) scale(0.4);
