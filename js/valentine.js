@@ -25,7 +25,7 @@ divNon.addEventListener('click', function() {
     audio.loop = true;
     audio.play();
     divTitle.textContent = "crève.";
-
+    image.src = "../images/gato2.jpeg";
     body.style.backgroundColor = "black";
     divTitle.style.color = "white";
     divTitle.style.fontStyle = "italic";

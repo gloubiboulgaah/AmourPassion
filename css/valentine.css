@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 20px;
 
 }
@@ -35,11 +35,15 @@ body {
 
 #image {
     width:50%;
+    box-shadow: -13px 11px 40px 0px rgba(0,0,0,0.53);
+    -webkit-box-shadow: -13px 11px 40px 0px rgba(0,0,0,0.53);
+    -moz-box-shadow: -13px 11px 40px 0px rgba(0,0,0,0.53);
 }
 
 #yes {
     position: absolute;
     left: 40%;
+    z-index: 3;
 }
 
 #no {
@@ -48,4 +52,18 @@ body {
 }
 .center {
     text-align: center;
+}
+
+@media (max-width: 900px) {
+    #image {
+        width: 90%;
+    }
+    #yes {
+        left: 70%;
+        z-index: 3;
+    }
+    
+    #no {
+        right: 70%;
+    }
 }
