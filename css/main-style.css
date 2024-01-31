@@ -16,6 +16,11 @@ body {
     flex-direction: column;
 }
 
+a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: inherit; /* Hérite la couleur du texte de l'élément parent */
+}
+
 .title-container {
     padding-top: 10px;
     padding-bottom: 10px;
