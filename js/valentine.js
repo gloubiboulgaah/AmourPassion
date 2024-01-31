@@ -16,6 +16,8 @@ divYes.addEventListener('click', function(e) {
     divTitle.textContent = "Parfait ^^"
     divSubTitle.textContent = "On se retrouve le 14 février ^^"
     image.src = "../images/amour.gif"
+    divYes.style.visibility = "hidden";
+    divNon.style.visibility = "hidden";
 })
 
 divNon.addEventListener('click', function() {
