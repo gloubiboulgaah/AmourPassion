@@ -1,115 +1,201 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/musique.css">
-    <link rel="icon" href="https://media.discordapp.net/attachments/1184982072310366300/1185003175359545445/retro-red-rose-icon-png.png?ex=658e0735&is=657b9235&hm=29fdcd495a5fd2be4c88af0441561a18e0f2c71323ca60665d338fb66b5e6dd3&=&format=webp&quality=lossless&width=1116&height=1116" type="image/png">
-    <title>Musique</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/musique.css" />
+        <link rel="icon" href="../images/rose-icon.png" type="image/png" />
+        <title>Musique</title>
 
-    <script>
-        
-    function toggleAM() {
-        toggleDisplay("AMText", "AMmusic");
-    }
-
-    function toggleNEK() {
-        toggleDisplay("NEKText", "NEKmusic");
-    }
-
-    function toggleELL() {
-        toggleDisplay("ELLText", "ELLmusic");
-    }
-
-    function toggleRH() {
-        toggleDisplay("RHText", "RHmusic");
-    }
-
-    function toggleDisplay(textId, musicId) {
-        var text = document.getElementById(textId);
-        var music = document.getElementById(musicId);
-
-        text.style.display = "block";
-        text.classList.add("typewriter");
-        music.style.display = "block";
-
-        var elements = ["AMText", "NEKText", "ELLText", "RHText"];
-        elements.forEach(function (element) {
-            if (element !== textId) {
-                document.getElementById(element).style.display = "none";
+        <script>
+            function toggleAM() {
+                toggleDisplay("AMText", "AMmusic");
             }
-        });
 
-        var musicElements = ["AMmusic", "NEKmusic", "ELLmusic", "RHmusic"];
-        musicElements.forEach(function (element) {
-            if (element !== musicId) {
-                document.getElementById(element).style.display = "none";
+            function toggleNEK() {
+                toggleDisplay("NEKText", "NEKmusic");
             }
-        });
-    }
-    </script>
-</head>
-<body>
-    <h1>La musique d'Anouck</h1>
-    <div class="row-container">
-        <div class="img-zone">
-            <img class="img-icon"  src="https://media.discordapp.net/attachments/1192977710104985751/1192977723665154160/71-Y-3usHkL.png?ex=65ab0a15&is=65989515&hm=eb7976f64ef89bc7c0954bb7fb9bd11cb715f4215ed596855eeeb22ff18c034b&=&format=webp&quality=lossless&width=1116&height=1116" alt="" onclick="toggleAM()">
-            <img class="img-icon"  src="https://media.discordapp.net/attachments/1192977710104985751/1192982895896309780/61OlncJ5pTL.png?ex=65ab0ee6&is=659899e6&hm=aabf09dfd9f071bea85bac075a196d29c05b2c6a526f8885164a15ec8deb1a28&=&format=webp&quality=lossless&width=1116&height=1116" alt="" onclick="toggleNEK()">
-            <img class="img-icon"  src="https://media.discordapp.net/attachments/1192977710104985751/1192984280880652329/ElliottSmith_cover.png?ex=65ab1031&is=65989b31&hm=ca46b0da635262f8ad3cb1140c082657d58c03b7aedd88899210554458016f54&=&format=webp&quality=lossless&width=1116&height=1116" alt="" onclick="toggleELL()">
-            <img class="img-icon"  src="https://media.discordapp.net/attachments/1192977710104985751/1192986127804670003/71VJAU9IPSL.png?ex=65ab11e9&is=65989ce9&hm=683be36f9533f9093888711210b8d88cd4bfb9020533a355c72af859027509a6&=&format=webp&quality=lossless&width=1116&height=1116" alt="" onclick="toggleRH()">
-        </div>
-        <div class="center-board">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1PBrYloZ1AzQ4o1xYmry8I?utm_source=generator" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
-        <div class="text-zone">
-            <div class="text">
-                <div id="AMText" style="display: none;">
-                    <p class="typewriter">Comment parler d'Anouck sans parler d'Arctic Monkeys...
-                    <br>Le groupe qui l'a fait tomber amoureuse de la musique, et qui l'a fait tomber amoureuse tout court :P
-                    <br>Plus sérieusement c'est un peu grâce à eux qu'on a pu se rencontrer, ce fût un chouette concert.
-                    <br>Pour en savourer toute leur grandeur je vous laisse avec le morceau qui animera notre futur mariage :D</p>
+
+            function toggleELL() {
+                toggleDisplay("ELLText", "ELLmusic");
+            }
+
+            function toggleRH() {
+                toggleDisplay("RHText", "RHmusic");
+            }
+
+            function toggleDisplay(textId, musicId) {
+                var text = document.getElementById(textId);
+                var music = document.getElementById(musicId);
+
+                text.style.display = "block";
+                text.classList.add("typewriter");
+                music.style.display = "block";
+
+                var elements = ["AMText", "NEKText", "ELLText", "RHText"];
+                elements.forEach(function (element) {
+                    if (element !== textId) {
+                        document.getElementById(element).style.display = "none";
+                    }
+                });
+
+                var musicElements = [
+                    "AMmusic",
+                    "NEKmusic",
+                    "ELLmusic",
+                    "RHmusic",
+                ];
+                musicElements.forEach(function (element) {
+                    if (element !== musicId) {
+                        document.getElementById(element).style.display = "none";
+                    }
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <h1>La musique d'Anouck</h1>
+        <div class="row-container">
+            <div class="img-zone">
+                <img
+                    class="img-icon"
+                    src="https://media.discordapp.net/attachments/1192977710104985751/1192977723665154160/71-Y-3usHkL.png?ex=65ab0a15&is=65989515&hm=eb7976f64ef89bc7c0954bb7fb9bd11cb715f4215ed596855eeeb22ff18c034b&=&format=webp&quality=lossless&width=1116&height=1116"
+                    alt=""
+                    onclick="toggleAM()"
+                />
+                <img
+                    class="img-icon"
+                    src="https://media.discordapp.net/attachments/1192977710104985751/1192982895896309780/61OlncJ5pTL.png?ex=65ab0ee6&is=659899e6&hm=aabf09dfd9f071bea85bac075a196d29c05b2c6a526f8885164a15ec8deb1a28&=&format=webp&quality=lossless&width=1116&height=1116"
+                    alt=""
+                    onclick="toggleNEK()"
+                />
+                <img
+                    class="img-icon"
+                    src="https://media.discordapp.net/attachments/1192977710104985751/1192984280880652329/ElliottSmith_cover.png?ex=65ab1031&is=65989b31&hm=ca46b0da635262f8ad3cb1140c082657d58c03b7aedd88899210554458016f54&=&format=webp&quality=lossless&width=1116&height=1116"
+                    alt=""
+                    onclick="toggleELL()"
+                />
+                <img
+                    class="img-icon"
+                    src="https://media.discordapp.net/attachments/1192977710104985751/1192986127804670003/71VJAU9IPSL.png?ex=65ab11e9&is=65989ce9&hm=683be36f9533f9093888711210b8d88cd4bfb9020533a355c72af859027509a6&=&format=webp&quality=lossless&width=1116&height=1116"
+                    alt=""
+                    onclick="toggleRH()"
+                />
+            </div>
+            <div class="center-board">
+                <iframe
+                    style="border-radius: 12px"
+                    src="https://open.spotify.com/embed/playlist/1PBrYloZ1AzQ4o1xYmry8I?utm_source=generator"
+                    width="100%"
+                    height="600"
+                    frameborder="0"
+                    allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                ></iframe>
+            </div>
+            <div class="text-zone">
+                <div class="text">
+                    <div id="AMText" style="display: none">
+                        <p class="typewriter">
+                            Comment parler d'Anouck sans parler d'Arctic
+                            Monkeys... <br />Le groupe qui l'a fait tomber
+                            amoureuse de la musique, et qui l'a fait tomber
+                            amoureuse tout court :P <br />Plus sérieusement
+                            c'est un peu grâce à eux qu'on a pu se rencontrer,
+                            ce fût un chouette concert. <br />Pour en savourer
+                            toute leur grandeur je vous laisse avec le morceau
+                            qui animera notre futur mariage :D
+                        </p>
+                    </div>
+                    <div id="NEKText" style="display: none">
+                        <p class="typewriter">
+                            Nekfeu, le rappeur préféré d'Anouck, et le seul
+                            qu'elle écoute.
+                            <br />C'est un peu son deuxième chéri, mais je ne
+                            suis pas jaloux, je l'aime bien aussi. <br />Je vous
+                            laisse avec un de ses morceaux préférés, et un de
+                            mes préférés aussi. <br />(un peu une iencli Anouck
+                            x) lol evidemment on rigole...)
+                        </p>
+                    </div>
+                    <div id="ELLText" style="display: none">
+                        <p class="typewriter">
+                            Elliott Smith... Un artiste que Anouck adore et on
+                            se demande pourquoi...
+                            <br />Et oui ! il a le même prénom que moi ! elle
+                            est donc obligé de l'aimer. <br />Anouck adore les
+                            chansons tristes, et Elliott Smith est un expert
+                            dans ce domaine. <br />Je vous laisse avec une de
+                            ses chansons préférées, et une de mes préférées
+                            aussi.
+                        </p>
+                    </div>
+                    <div id="RHText" style="display: none">
+                        <p class="typewriter">
+                            Radiohead... Anouck ADORE !!!
+                            <br />
+                            C'est son côté fofolle x) weirdo <br />
+                            Je rigole évidemment Anouck est une fille très
+                            sérieuse et très mature. <br />
+                            Voilà cependant un titre qui nous rapproche moi et
+                            Anouck, et qui nous a fait passer de bons moments.
+                            (c'est d'ailleurs le morceau d'un super film)
+                        </p>
+                    </div>
                 </div>
-                <div id="NEKText" style="display: none;">
-                    <p class="typewriter">
-                        Nekfeu, le rappeur préféré d'Anouck, et le seul qu'elle écoute.
-                        <br>C'est un peu son deuxième chéri, mais je ne suis pas jaloux, je l'aime bien aussi.
-                        <br>Je vous laisse avec un de ses morceaux préférés, et un de mes préférés aussi.
-                        <br>(un peu une iencli Anouck x) lol evidemment on rigole...)
-                    </p>
-                </div>
-                <div id="ELLText" style="display: none;">
-                    <p class="typewriter">
-                        Elliott Smith... Un artiste que Anouck adore et on se demande pourquoi...
-                        <br>Et oui ! il a le même prénom que moi ! elle est donc obligé de l'aimer.
-                        <br>Anouck adore les chansons tristes, et Elliott Smith est un expert dans ce domaine.
-                        <br>Je vous laisse avec une de ses chansons préférées, et une de mes préférées aussi.
-                    </p>
-                </div>
-                <div id="RHText" style="display: none;">
-                    <p class="typewriter">
-                        Radiohead... Anouck ADORE !!!
-                        <br> C'est son côté fofolle x) weirdo
-                        <br> Je rigole évidemment Anouck est une fille très sérieuse et très mature.
-                        <br> Voilà cependant un titre qui nous rapproche moi et Anouck, et qui nous a fait passer de bons moments. (c'est d'ailleurs le morceau d'un super film)
-                    </p>
+                <div class="music">
+                    <div id="AMmusic" style="display: none">
+                        <iframe
+                            style="border-radius: 12px"
+                            src="https://open.spotify.com/embed/track/5XeFesFbtLpXzIVDNQP22n?utm_source=generator"
+                            width="100%"
+                            height="352"
+                            frameborder="0"
+                            allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+                    <div id="NEKmusic" style="display: none">
+                        <iframe
+                            style="border-radius: 12px"
+                            src="https://open.spotify.com/embed/track/476Nn5jU0ua9JnrAZcn6Fl?utm_source=generator"
+                            width="100%"
+                            height="352"
+                            frameborder="0"
+                            allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+                    <div id="ELLmusic" style="display: none">
+                        <iframe
+                            style="border-radius: 12px"
+                            src="https://open.spotify.com/embed/track/52Bg6oaos7twR7IUtEpqcE?utm_source=generator"
+                            width="100%"
+                            height="352"
+                            frameborder="0"
+                            allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+                    <div id="RHmusic" style="display: none">
+                        <iframe
+                            style="border-radius: 12px"
+                            src="https://open.spotify.com/embed/track/7Hg6a7tZsVTkXnBUepjZU6?utm_source=generator"
+                            width="100%"
+                            height="352"
+                            frameborder="0"
+                            allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"
+                        ></iframe>
+                    </div>
                 </div>
             </div>
-            <div class="music">
-                <div id="AMmusic" style="display: none;">
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5XeFesFbtLpXzIVDNQP22n?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-                <div id="NEKmusic" style="display: none;">
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/476Nn5jU0ua9JnrAZcn6Fl?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-                <div id="ELLmusic" style="display: none;">
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/52Bg6oaos7twR7IUtEpqcE?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-                <div id="RHmusic" style="display: none;">
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7Hg6a7tZsVTkXnBUepjZU6?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-            </div>
         </div>
-    </div>
-    <a href="amour.html"><p>retour...</p></a>
-</body>
+        <a href="amour.html"><p>retour...</p></a>
+    </body>
 </html>
